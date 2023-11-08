@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript課題</title>
+    <script>
+        let price = 1020;
+    </script>
+    <script src="calctax2.js"></script>
+</head>
+
+<body onload="calcTax(price,0);">
+    <h1 id="answer">0</h1>
+    <button onclick="calcTax(price,0);">リセット</button>
+    <button onclick="calcTax(price,8);">テイクアウト</button>
+    <button onclick="calcTax(price,10);">イートイン</button>
+</body>
+
+</html>

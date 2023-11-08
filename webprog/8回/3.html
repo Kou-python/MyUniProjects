@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript課題</title>
+    <script>
+        let count = 1;
+
+        function changeText() {
+            let h1str = document.getElementById("str");
+            count++;
+            h1str.innerText = "文字列" + count;
+            if (count % 2 == 0) {
+                h1str.style.color = "#ff0000";
+                h1str.style.backgroundColor = "#ffcccc";
+            } else {
+                h1str.style.color = "#0000ff";
+                h1str.style.backgroundColor = "#ccccff";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="str">文字列1</h1>
+    <button onclick="changeText();">変更！</button>
+</body>
+
+</html>

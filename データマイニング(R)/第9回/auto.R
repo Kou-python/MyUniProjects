@@ -1,0 +1,6 @@
+auto.rp<- rpart(Price~.,data=auto,control=rpart.control(cp=0.08))
+plot(auto.rp)
+text(auto.rp)
+print(auto.rp)
+auto.res<-as.party(auto.rp)
+plot(auto.res)

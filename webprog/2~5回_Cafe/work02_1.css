@@ -1,0 +1,53 @@
+@media (prefers-color-scheme: dark) {
+    .dark {
+        background-color: #1c1a1a;
+        color: #faf8f7;
+        ;
+    }
+}
+
+.access_ {
+    display: flex;
+}
+
+.access_cap {
+    width: 50%;
+    margin: 10px;
+}
+
+.access_img {
+    width: 50%;
+    margin: 10px;
+}
+
+.chef_ {
+    display: flex;
+}
+
+.chef_cap {
+    width: 50%;
+    right: auto;
+    margin: 10px;
+}
+
+.chef_img {
+    width: 50%;
+    margin: 10px;
+}
+
+table {
+    border: medium solid #2f4f4f;
+    /* 枠線の装飾 */
+    margin: 1rem 3rem;
+}
+
+th,
+td {
+    border: thin solid #2f4f4f;
+    padding: 0.1rem 0.5rem;
+}
+
+th {
+    color: #ffffff;
+    background-color: #164fec;
+}

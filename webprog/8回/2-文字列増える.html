@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript課題</title>
+    <script>
+        let count = 1;
+
+        function addItem() {
+            let child = document.createElement("li");
+            count++;
+            child.id = "li" + count;
+            child.innerText = "文字列" + count;
+            document.getElementById("list").appendChild(child);
+        }
+    </script>
+</head>
+
+<body>
+    <ol id="list">
+        <li>文字列1</li>
+    </ol>
+    <button onclick="addItem();">追加！</button>
+</body>
+
+</html>

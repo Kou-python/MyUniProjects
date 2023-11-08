@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript課題</title>
+    <script>
+        function main() {
+            let sum = 0;
+            for (let i = 1; i < 6; i++) {
+                let input = window.prompt(i + "番目の数字を入力してください。", "");
+
+                sum += Number(input);
+                let child = document.createElement("li");
+                child.innerText = input;
+                document.getElementById("list").appendChild(child);
+            }
+            alert("平均値は " + sum / 5 + " です ");
+        }
+    </script>
+
+</head>
+
+<body onload="main()">
+    <ul id="list">
+    </ul>
+</body>
+
+</html>

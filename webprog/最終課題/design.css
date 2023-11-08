@@ -1,0 +1,83 @@
+.site-header {
+    background: #fff;
+    display: flex;
+    padding: 60px 20px;
+    position: fixed;
+    justify-content: space-between;
+    width: 15%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.gnav__menu {
+    margin-left: 20px;
+}
+
+.gnav__menu li {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.content {
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.content p {
+    font-size: medium;
+}
+
+.content h1 {
+    border-top: solid 3px #364e96;
+    border-bottom: solid 3px #364e96;
+    font-style: oblique;
+    font-size: 50px;
+    color: gold;
+}
+
+.content h2 {
+    margin-top: 40px;
+    border-bottom: double 5px #FFC778;
+}
+
+body {
+    background: #81bcd8;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    color: black;
+    position: relative;
+    background: #f1f8ff;
+    line-height: 1.5;
+    padding: 0.5em;
+    margin-bottom: 4px;
+    border-left: solid 35px #5c9ee7;
+    list-style-type: none!important;
+}
+
+ul li:before {
+    position: absolute;
+    display: block;
+    padding: 0.5em;
+    width: 1.2em;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    left: -35px;
+    top: 50%;
+}
+
+img {
+    padding-top: 30px;
+}
+
+.after,
+.before {
+    padding-top: 30px;
+}

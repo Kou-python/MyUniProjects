@@ -1,0 +1,68 @@
+header ol {
+    counter-reset: number;
+    /*数字をリセット*/
+    list-style-type: none!important;
+    /*数字を一旦消す*/
+    padding: 0.5em;
+    border: dashed 1px gray;
+}
+
+header ol li {
+    position: relative;
+    line-height: 1.5em;
+    padding: 0.5em 0.5em 0.5em 30px;
+}
+
+header ol li:before {
+    /* 以下数字をつける */
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    /*数字のデザイン変える*/
+    display: inline-block;
+    background: #74c2f8;
+    color: white;
+    font-family: 'Avenir', 'Arial Black', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    /*以下上下中央寄せのため*/
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contents {
+    display: flex;
+}
+
+.contents h2,
+p {
+    width: 70%;
+    right: auto;
+}
+
+.contents img,
+video {
+    width: 30%;
+}
+
+th,
+td {
+    border: thin solid #2f4f4f;
+    padding: 0.1rem 0.5rem;
+}
+
+th {
+    color: #ffffff;
+    background-color: #164fec;
+}
